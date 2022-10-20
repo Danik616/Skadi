@@ -63,7 +63,7 @@ router.put("/paginas/:id", (req, res) => {
         .catch((error) => res.json({ message: error }));
 });
 //Eliminar pagina por su id
-router.delete("/usuarios/:id", (req, res) => {
+router.delete("/paginas/:id", (req, res) => {
     const { id } = req.params;
     paginasSchema
         .remove({ _id: id })
